@@ -1,0 +1,15 @@
+<!-- en la pagina 'settings' está una seccion llamada templates. Ahi dentro de brakets en 'DIR' colocamos la ruta de la carpeta template, o simplemente el nombre !-->
+
+
+<h1>Word Count</h1>
+
+<form action="{% url 'count' %}">
+
+<textarea cols="40" rows="5" name="fulltext"></textarea>
+<br>
+<input type="submit" value="Count!"/>
+
+<br>
+<a href="{% url 'about' %}">About page</a>
+
+</form>
